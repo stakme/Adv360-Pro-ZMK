@@ -63,11 +63,11 @@
        "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
        "&trans", "&trans", "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans"
     ], [
-       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans",                                                             "&trans", "&trans",   "&trans",       "&trans",    "&trans", "&trans", "&trans",
-       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans",                                                             "&trans", "&trans",   "&trans", "&kp UP_ARROW",    "&trans", "&trans", "&trans",
-       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&kp LEFT",     "&kp DOWN", "&kp RIGHT", "&trans", "&trans",
-       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",   "&trans",       "&trans",    "&trans", "&trans", "&trans",
-       "&trans", "&trans", "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans",             "&trans",       "&trans",    "&trans", "&trans", "&trans"
+       "&trans", "&trans", "&trans",    "&trans", "&trans", "&trans",           "&trans",                                                             "&trans", "&trans",   "&trans",       "&trans",    "&trans", "&trans", "&trans",
+       "&trans", "&trans", "&trans", "&kp LSHFT", "&trans", "&trans",           "&trans",                                                             "&trans", "&trans",   "&trans", "&kp UP_ARROW",    "&trans", "&trans", "&trans",
+       "&trans", "&trans", "&trans", "&kp LCTRL", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&kp LEFT",     "&kp DOWN", "&kp RIGHT", "&trans", "&trans",
+       "&trans", "&trans", "&trans",    "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",   "&trans",       "&trans",    "&trans", "&trans", "&trans",
+       "&trans", "&trans", "&trans",    "&trans", "&trans",                     "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans",             "&trans",       "&trans",    "&trans", "&trans", "&trans"
     ]
   ]
 }
