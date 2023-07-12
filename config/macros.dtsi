@@ -2,7 +2,7 @@ macro_sticky_cmd: macro_sticky_cmd{
 compatible = "zmk,behavior-macro";
 label = "macro_sticky_cmd";
 #binding-cells = <0>;
-bindings = <&sk LEFT_GUI>, <&mo 0>;
+bindings = <&to 0>, <&sk LEFT_GUI>;
 };
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";

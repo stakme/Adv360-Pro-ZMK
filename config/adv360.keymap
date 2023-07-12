@@ -49,7 +49,7 @@
             bindings = <
             &trans  &kp COMMA     &kp MINUS  &kp NUMBER_7  &kp DOUBLE_QUOTES            &trans            &trans                                                                          &trans         &trans            &kp O         &kp M          &kp C         &kp J        &trans
  &kp RIGHT_BRACKET      &kp R  &kp NUMBER_0         &kp U       &kp NUMBER_6             &kp V            &trans                                                                          &trans  &kp SEMICOLON            &kp A  &kp NUMBER_8          &kp X  &kp NUMBER_5     &kp SLASH
-             &kp L    &lt 6 Q       &lt 8 W         &kp D              &kp Y      &kp NUMBER_3            &trans             &trans      &to 0  &trans  &trans     &kp RC(SPACE)  &trans  &trans          &kp P  &kp RIGHT_BRACE         &kp E        &lt 5 T       &lt 7 S  &kp NUMBER_2
+             &kp L    &lt 6 Q       &lt 8 W         &kp D               &knc      &kp NUMBER_3            &trans             &trans      &to 0  &trans  &trans     &kp RC(SPACE)  &trans  &trans          &kp P            &kbd          &kp E        &lt 5 T       &lt 7 S  &kp NUMBER_2
             &trans      &kp B         &kp I         &kp H       &kp NUMBER_9  &kp SINGLE_QUOTE            &trans             &trans     &trans  &trans  &trans            &trans  &trans  &trans          &kp F            &kp Z         &kp K          &kp G       &kp DOT        &trans
             &trans      &kp N  &kp NUMBER_1        &trans             &trans                              &trans  &macro_sticky_cmd  &kp EQUAL                  &kp LEFT_BRACKET  &trans  &trans                          &trans        &trans  &kp BACKSLASH  &kp NUMBER_4        &trans
             >;
