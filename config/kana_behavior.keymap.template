@@ -18,22 +18,79 @@
   behaviors {
     #include "macros.dtsi"
 
-    knc: kana_n_comma {
+    /*  
+    イ	、 
+    kana_i_comma,kin
+    */
+    kic: kana_i_comma {
         compatible = "zmk,behavior-mod-morph";
         label = "KANA_N_COMMA";
         #binding-cells = <0>;
-        bindings = <&kp Y>, <&kp LS(COMMA)>;
+        bindings = <&kp e>, <&kp LS(COMMA)>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
-    kbd: kana_bou_dot {
+    /*
+    ン	。
+    kana_n_period,knp
+    */
+    knp: kana_n_period {
         compatible = "zmk,behavior-mod-morph";
         label = "KANA_N_DOT";
         #binding-cells = <0>;
-        bindings = <&kp RIGHT_BRACE>, <&kp LS(DOT)>;
+        bindings = <&kp y>, <&kp LS(DOT)>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
+    /*
+    ウ	（
+    kana_u_curl_open,kuco
+    */
+    kuco: kana_u_curl_open {
+        compatible = "zmk,behavior-mod-morph";
+        label = "KANA_U_CURL_OPEN";
+        #binding-cells = <0>;
+        bindings = <&kp N4>, <&kp LS(LBRACKET)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    /*
+    ル	）
+    kana_ru_curl_close,krucc
+    */
+    krucc: kana_ru_curl_close {
+        compatible = "zmk,behavior-mod-morph";
+        label = "KANA_RU_CURL_CLOSE";
+        #binding-cells = <0>;
+        bindings = <&kp DOT>, <&kp LS(RBRACKET)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    /*
+    ト	「
+    kana_to_double_quote_open,ktodqo
+
+    テ	」
+    kana_te_double_quote_close,ktedqc
+
+    ク	『
+    kana_ku_single_quote_open,kkusqo
+
+    ヨ	』
+    kana_yo_single_quote_close,kyosqc
+
+    ノ	・
+    kana_no_middle_dot,knomd
+
+    キ	…
+    kana_ki_ellipsis,kkiel
+
+    ツ	？
+    kana_tsu_question_mark,ktsqm
+
+    コ	！
+    kana_ko_exclamation_mark,kkoem
+    */
   };
 
     keymap {
