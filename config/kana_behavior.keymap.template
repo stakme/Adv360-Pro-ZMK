@@ -130,7 +130,7 @@ kana_ko_exclamation_mark,kkoem
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
-    {{behaviour_definitions}}
+{{behaviour_definitions}}
   };
 
     keymap {

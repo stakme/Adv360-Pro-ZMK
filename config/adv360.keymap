@@ -120,18 +120,16 @@ kana_ko_exclamation_mark,kkoem
         compatible = "zmk,behavior-mod-morph";
         label = "KANA_KI_QUESTION_MARK";
         #binding-cells = <0>;
-        bindings = <&kp J>, <&kp AL(LS(SLASH))>;
+        bindings = <&kp J>, <&kp LA(LS(SLASH))>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     kkoem: kana_ko_exclamation_mark {
         compatible = "zmk,behavior-mod-morph";
         label = "KANA_KO_EXCLAMATION_MARK";
         #binding-cells = <0>;
-        bindings = <&kp B>, <&kp AL(LS(N0))>;
+        bindings = <&kp B>, <&kp LA(LS(N0))>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
-
-    {{behaviour_definitions}}
   };
 
     keymap {
