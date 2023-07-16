@@ -73,14 +73,14 @@ kana_ko_exclamation_mark,kkoem
         compatible = "zmk,behavior-mod-morph";
         label = "KANA_U_CURL_OPEN";
         #binding-cells = <0>;
-        bindings = <&kp N4>, <&kp LA(LS(N8))>;
+        bindings = <&kp N4>, <&kp LA(LS(N9))>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     krucc: kana_ru_curl_close {
         compatible = "zmk,behavior-mod-morph";
         label = "KANA_RU_CURL_CLOSE";
         #binding-cells = <0>;
-        bindings = <&kp DOT>, <&kp LA(LS(N9))>;
+        bindings = <&kp DOT>, <&kp LA(LS(N0))>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     ktodqo: kana_to_double_quote_open {
@@ -94,21 +94,21 @@ kana_ko_exclamation_mark,kkoem
         compatible = "zmk,behavior-mod-morph";
         label = "KANA_TE_DOUBLE_QUOTE_CLOSE";
         #binding-cells = <0>;
-        bindings = <&kp W>, <&kp LS(RIGHT_BRACKET)>;
+        bindings = <&kp W>, <&kp LS(LEFT_BRACKET)>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     kkusqo: kana_ku_single_quote_open {
         compatible = "zmk,behavior-mod-morph";
         label = "KANA_KU_SINGLE_QUOTE_OPEN";
         #binding-cells = <0>;
-        bindings = <&kp N1>, <&kp LA(LS(EQUAL))>;
+        bindings = <&kp H>, <&kp LA(LS(EQUAL))>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     kyosqc: kana_yo_single_quote_close {
         compatible = "zmk,behavior-mod-morph";
         label = "KANA_YO_SINGLE_QUOTE_CLOSE";
         #binding-cells = <0>;
-        bindings = <&kp W>, <&kp LA(LS(RIGHT_BRACKET))>;
+        bindings = <&kp N9>, <&kp LA(LS(LEFT_BRACKET))>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
   };
