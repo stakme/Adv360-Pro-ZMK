@@ -123,11 +123,11 @@ kana_tsu_exclamation_mark,ktsuem
         bindings = <&kp J>, <&kp AL(LS(SLASH))>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
-    ktsuem: kana_tsu_exclamation_mark {
+    kkoem: kana_ko_exclamation_mark {
         compatible = "zmk,behavior-mod-morph";
-        label = "KANA_TSU_EXCLAMATION_MARK";
+        label = "KANA_KO_EXCLAMATION_MARK";
         #binding-cells = <0>;
-        bindings = <&kp L>, <&kp LS(N1)>;
+        bindings = <&kp B>, <&kp AL(LS(N0))>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
