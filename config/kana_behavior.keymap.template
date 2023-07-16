@@ -47,6 +47,8 @@ kana_ki_question_mark,kkiqm
 
 コ	！
 kana_ko_exclamation_mark,kkoem
+
+wa_wo_swap,wwswap
 */
 / {
   behaviors {
@@ -127,6 +129,13 @@ kana_ko_exclamation_mark,kkoem
         label = "KANA_KO_EXCLAMATION_MARK";
         #binding-cells = <0>;
         bindings = <&kp B>, <&kp AL(LS(N0))>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    wwswap: wa_wo_swap {
+        compatible = "zmk,behavior-mod-morph";
+        label = "WA_WO_SWAP";
+        #binding-cells = <0>;
+        bindings = <&kp LS(N0)>, <&kp N0>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
