@@ -33,12 +33,6 @@ kana_to_double_quote_open,ktodqo
 テ	」
 kana_te_double_quote_close,ktedqc
 
-ク	『
-kana_ku_single_quote_open,kkusqo
-
-ヨ	』
-kana_yo_single_quote_close,kyosqc
-
 ノ	・
 kana_no_middle_dot,knomd
 
@@ -96,32 +90,18 @@ wa_wo_swap,wwswap
         bindings = <&kp W>, <&kp LS(LEFT_BRACKET)>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
-    kkusqo: kana_ku_single_quote_open {
-        compatible = "zmk,behavior-mod-morph";
-        label = "KANA_KU_SINGLE_QUOTE_OPEN";
-        #binding-cells = <0>;
-        bindings = <&kp H>, <&kp LA(LS(LEFT_BRACKET))>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    kyosqc: kana_yo_single_quote_close {
-        compatible = "zmk,behavior-mod-morph";
-        label = "KANA_YO_SINGLE_QUOTE_CLOSE";
-        #binding-cells = <0>;
-        bindings = <&kp N9>, <&kp LA(LS(RIGHT_BRACKET))>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
     knomd: kana_no_middle_dot {
         compatible = "zmk,behavior-mod-morph";
         label = "KANA_NO_MIDDLE_DOT";
         #binding-cells = <0>;
-        bindings = <&kp G>, <&kp LS(SLASH)>;
+        bindings = <&kp K>, <&kp LS(SLASH)>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     kkiqm: kana_ki_question_mark {
         compatible = "zmk,behavior-mod-morph";
         label = "KANA_KI_QUESTION_MARK";
         #binding-cells = <0>;
-        bindings = <&kp J>, <&kp LA(LS(SLASH))>;
+        bindings = <&kp G>, <&kp LA(LS(SLASH))>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     kkoem: kana_ko_exclamation_mark {
