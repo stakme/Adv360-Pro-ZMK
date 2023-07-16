@@ -1,0 +1,15 @@
+knc: kana_n_comma{
+    compatible = "zmk,behavior-mod-morph";
+    label = "KANA_N_COMMA";
+    #binding-cells = <0>;
+    bindings = <&kp Y>, <&kp LS(COMMA)>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+};
+
+kbd: kana_bou_dot{
+    compatible = "zmk,behavior-mod-morph";
+    label = "KANA_N_DOT";
+    #binding-cells = <0>;
+    bindings = <&kp RIGHT_BRACE>, <&kp LS(DOT)>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+};
