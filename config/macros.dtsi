@@ -41,7 +41,7 @@ label = "macro_kinesis";
 bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
 };
 
-knc: kana_n_comma {
+knc: kana_n_comma{
     compatible = "zmk,behavior-mod-morph";
     label = "KANA_N_COMMA";
     #binding-cells = <0>;
@@ -49,7 +49,7 @@ knc: kana_n_comma {
     mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 
-kbd: kana_bou_dot {
+kbd: kana_bou_dot{
     compatible = "zmk,behavior-mod-morph";
     label = "KANA_N_DOT";
     #binding-cells = <0>;
