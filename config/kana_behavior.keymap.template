@@ -42,14 +42,11 @@ kana_yo_single_quote_close,kyosqc
 ノ	・
 kana_no_middle_dot,knomd
 
-キ	…
-kana_ki_ellipsis,kkiel
+キ	？
+kana_ki_question_mark,kkiqm
 
-ツ	？
-kana_tsu_question_mark,ktsqm
-
-コ	！
-kana_ko_exclamation_mark,kkoem
+ツ	！
+kana_tsu_exclamation_mark,ktsuem
 */
 / {
   behaviors {
@@ -111,6 +108,29 @@ kana_ko_exclamation_mark,kkoem
         bindings = <&kp N9>, <&kp LA(LS(LEFT_BRACKET))>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
+    knomd: kana_no_middle_dot {
+        compatible = "zmk,behavior-mod-morph";
+        label = "KANA_NO_MIDDLE_DOT";
+        #binding-cells = <0>;
+        bindings = <&kp K>, <&kp LS(SLASH)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    kkiqm: kana_ki_question_mark {
+        compatible = "zmk,behavior-mod-morph";
+        label = "KANA_KI_QUESTION_MARK";
+        #binding-cells = <0>;
+        bindings = <&kp J>, <&kp AL(LS(SLASH))>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    ktsuem: kana_tsu_exclamation_mark {
+        compatible = "zmk,behavior-mod-morph";
+        label = "KANA_TSU_EXCLAMATION_MARK";
+        #binding-cells = <0>;
+        bindings = <&kp L>, <&kp LS(N1)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    {{behaviour_definitions}}
   };
 
     keymap {
