@@ -114,21 +114,21 @@ wa_wo_swap,wwswap
         compatible = "zmk,behavior-mod-morph";
         label = "KANA_NO_MIDDLE_DOT";
         #binding-cells = <0>;
-        bindings = <&kp K>, <&kp LS(SLASH)>;
+        bindings = <&kp G>, <&kp LS(SLASH)>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     kkiqm: kana_ki_question_mark {
         compatible = "zmk,behavior-mod-morph";
         label = "KANA_KI_QUESTION_MARK";
         #binding-cells = <0>;
-        bindings = <&kp J>, <&kp AL(LS(SLASH))>;
+        bindings = <&kp J>, <&kp LA(LS(SLASH))>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     kkoem: kana_ko_exclamation_mark {
         compatible = "zmk,behavior-mod-morph";
         label = "KANA_KO_EXCLAMATION_MARK";
         #binding-cells = <0>;
-        bindings = <&kp B>, <&kp AL(LS(N1))>;
+        bindings = <&kp B>, <&kp LA(LS(N1))>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     wwswap: wa_wo_swap {
