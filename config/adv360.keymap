@@ -151,7 +151,7 @@ kana_ko_exclamation_mark,kkoem
         layer_ja1 {
             bindings = <
             &trans                    &kp M         &kp J  &kp COMMA  &kp NUMBER_6             &trans            &trans                                                                          &trans            &trans    &kp O  &kp SEMICOLON  &kp NUMBER_7     &kp MINUS  &trans
- &kp RIGHT_BRACKET                    &kp P  &kp NUMBER_5     &kkoem        &kkiqm              &kp V            &trans                                                                          &trans  &kp SINGLE_QUOTE    &kp A   &kp NUMBER_8  &kp NUMBER_8  &kp NUMBER_2   &kp C
+ &kp RIGHT_BRACKET                    &kp P  &kp NUMBER_5     &kkoem        &kkiqm              &kp V            &trans                                                                          &trans  &kp SINGLE_QUOTE    &kp A          &kp Z  &kp NUMBER_8  &kp NUMBER_2   &kp C
              &kp L  &lt 6 RS(RIGHT_BRACKET)       &lt 8 T     &krucc          &knp              &kp U            &trans             &trans      &to 0  &trans  &trans     &kp RC(SPACE)  &trans  &trans      &kp NUMBER_3     &kic          &kuco       &lt 5 D       &lt 7 Q   &kp X
             &trans                    &kp A         &kp I    &kyosqc       &ktedqc  &kp DOUBLE_QUOTES            &trans             &trans     &trans  &trans  &trans            &trans  &trans  &trans             &kp L  &ktodqo        &kkusqo         &kp R         &kp F  &trans
             &trans            &kp BACKSLASH  &kp NUMBER_1     &trans        &trans                               &trans  &macro_sticky_cmd  &kp EQUAL                  &kp LEFT_BRACKET  &trans  &trans                     &trans         &trans         &kp N     &kp SLASH  &trans
