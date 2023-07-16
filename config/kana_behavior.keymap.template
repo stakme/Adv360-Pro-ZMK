@@ -100,14 +100,14 @@ wa_wo_swap,wwswap
         compatible = "zmk,behavior-mod-morph";
         label = "KANA_KU_SINGLE_QUOTE_OPEN";
         #binding-cells = <0>;
-        bindings = <&kp H>, <&kp LA(LS(EQUAL))>;
+        bindings = <&kp H>, <&kp LA(LS(LEFT_BRACKET))>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     kyosqc: kana_yo_single_quote_close {
         compatible = "zmk,behavior-mod-morph";
         label = "KANA_YO_SINGLE_QUOTE_CLOSE";
         #binding-cells = <0>;
-        bindings = <&kp N9>, <&kp LA(LS(LEFT_BRACKET))>;
+        bindings = <&kp N9>, <&kp LA(LS(RIGHT_BRACKET))>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     knomd: kana_no_middle_dot {
@@ -128,7 +128,7 @@ wa_wo_swap,wwswap
         compatible = "zmk,behavior-mod-morph";
         label = "KANA_KO_EXCLAMATION_MARK";
         #binding-cells = <0>;
-        bindings = <&kp B>, <&kp AL(LS(N0))>;
+        bindings = <&kp B>, <&kp AL(LS(N1))>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     wwswap: wa_wo_swap {
