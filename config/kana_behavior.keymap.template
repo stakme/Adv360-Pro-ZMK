@@ -1,15 +1,44 @@
-knc: kana_n_comma{
-    compatible = "zmk,behavior-mod-morph";
-    label = "KANA_N_COMMA";
-    #binding-cells = <0>;
-    bindings = <&kp Y>, <&kp LS(COMMA)>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-};
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
 
-kbd: kana_bou_dot{
-    compatible = "zmk,behavior-mod-morph";
-    label = "KANA_N_DOT";
-    #binding-cells = <0>;
-    bindings = <&kp RIGHT_BRACE>, <&kp LS(DOT)>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
+
+/* THIS FILE WAS GENERATED!
+ *
+ * This file was generated automatically. You may or may not want to
+ * edit it directly.
+ */
+
+#include <behaviors.dtsi>
+{{behaviour_includes}}
+
+/ {
+  behaviors {
+    #include "macros.dtsi"
+
+    knc: kana_n_comma {
+        compatible = "zmk,behavior-mod-morph";
+        label = "KANA_N_COMMA";
+        #binding-cells = <0>;
+        bindings = <&kp Y>, <&kp LS(COMMA)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    kbd: kana_bou_dot {
+        compatible = "zmk,behavior-mod-morph";
+        label = "KANA_N_DOT";
+        #binding-cells = <0>;
+        bindings = <&kp RIGHT_BRACE>, <&kp LS(DOT)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+  };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+{{rendered_layers}}
+    };
 };
