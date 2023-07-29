@@ -24,8 +24,8 @@ kana_n_period,knp
 ク	（
 kana_ku_curl_open,kkuco
 
-ヨ	）
-kana_yo_curl_close,kyocc
+ス	）
+kana_su_curl_close,ksucc
 
 ト	「
 kana_to_double_quote_open,ktodqo
@@ -69,11 +69,11 @@ wa_wo_swap,wwswap
         bindings = <&kp H>, <&kp LA(LS(N9))>;
         mods = <(MOD_RSFT)>;
     };
-    kyocc: kana_yo_curl_close {
+    ksucc: kana_su_curl_close {
         compatible = "zmk,behavior-mod-morph";
-        label = "KANA_YO_CURL_CLOSE";
+        label = "KANA_SU_CURL_CLOSE";
         #binding-cells = <0>;
-        bindings = <&kp N9>, <&kp LA(LS(N0))>;
+        bindings = <&kp R>, <&kp LA(LS(N0))>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     ktodqo: kana_to_double_quote_open {
