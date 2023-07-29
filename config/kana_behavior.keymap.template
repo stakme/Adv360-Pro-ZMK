@@ -66,14 +66,14 @@ wa_wo_swap,wwswap
         compatible = "zmk,behavior-mod-morph";
         label = "KANA_KU_CURL_OPEN";
         #binding-cells = <0>;
-        bindings = <&kp H>, <&kp LA(LS(N9))>;
-        mods = <(MOD_RSFT)>;
+        bindings = <&kp H>, <&kp LA(RS(N9))>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     ksucc: kana_su_curl_close {
         compatible = "zmk,behavior-mod-morph";
         label = "KANA_SU_CURL_CLOSE";
         #binding-cells = <0>;
-        bindings = <&kp R>, <&kp LA(LS(N0))>;
+        bindings = <&kp R>, <&kp LA(RS(N0))>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     ktodqo: kana_to_double_quote_open {
@@ -101,14 +101,14 @@ wa_wo_swap,wwswap
         compatible = "zmk,behavior-mod-morph";
         label = "KANA_KI_QUESTION_MARK";
         #binding-cells = <0>;
-        bindings = <&kp G>, <&kp LA(LS(SLASH))>;
+        bindings = <&kp G>, <&kp LA(RS(SLASH))>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     kkoem: kana_ko_exclamation_mark {
         compatible = "zmk,behavior-mod-morph";
         label = "KANA_KO_EXCLAMATION_MARK";
         #binding-cells = <0>;
-        bindings = <&kp B>, <&kp LA(LS(N1))>;
+        bindings = <&kp B>, <&kp LA(RS(N1))>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     wwswap: wa_wo_swap {
