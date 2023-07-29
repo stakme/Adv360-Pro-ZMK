@@ -25,8 +25,8 @@ kana_n_period,knp
 ク	（
 kana_ku_curl_open,kkuco
 
-ヨ	）
-kana_yo_curl_close,kyocc
+ス	）
+kana_su_curl_close,ksucc
 
 ト	「
 kana_to_double_quote_open,ktodqo
@@ -68,11 +68,11 @@ kana_ko_exclamation_mark,kkoem
         bindings = <&kp H>, <&kp LA(LS(N9))>;
         mods = <(MOD_RSFT)>;
     };
-    kyocc: kana_yo_curl_close {
+    ksucc: kana_su_curl_close {
         compatible = "zmk,behavior-mod-morph";
-        label = "KANA_YO_CURL_CLOSE";
+        label = "KANA_SU_CURL_CLOSE";
         #binding-cells = <0>;
-        bindings = <&kp N9>, <&kp LA(LS(N0))>;
+        bindings = <&kp R>, <&kp LA(LS(N0))>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     ktodqo: kana_to_double_quote_open {
@@ -87,13 +87,6 @@ kana_ko_exclamation_mark,kkoem
         label = "KANA_TE_DOUBLE_QUOTE_CLOSE";
         #binding-cells = <0>;
         bindings = <&kp W>, <&kp LS(LEFT_BRACKET)>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    kyosqc: kana_yo_single_quote_close {
-        compatible = "zmk,behavior-mod-morph";
-        label = "KANA_YO_SINGLE_QUOTE_CLOSE";
-        #binding-cells = <0>;
-        bindings = <&kp N9>, <&kp LA(LS(RIGHT_BRACKET))>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     knomd: kana_no_middle_dot {
@@ -145,7 +138,7 @@ kana_ko_exclamation_mark,kkoem
             &trans                    &kp M         &kp J  &kp COMMA  &kp NUMBER_6             &trans            &trans                                                                          &trans            &trans    &kp O  &kp SEMICOLON  &kp NUMBER_7     &kp MINUS  &trans
  &kp RIGHT_BRACKET                    &kp P  &kp NUMBER_5     &kkoem        &kkiqm              &kp V            &trans                                                                          &trans  &kp SINGLE_QUOTE    &knomd          &kp Z  &kp NUMBER_8  &kp NUMBER_2   &kp C
              &wwswap  &lt 6 RS(RIGHT_BRACKET)       &lt 8 T     &kruc          &knp              &kp U            &trans             &trans      &to 0  &trans  &trans     &kp RC(SPACE)  &trans  &trans      &kp NUMBER_3     &kp E         &kp N4       &lt 5 D       &lt 7 Q   &kp X
-            &trans                    &kp A         &kp I    &kyocc       &ktedqc  &kp DOUBLE_QUOTES            &trans             &trans     &trans  &trans  &trans            &trans  &trans  &trans             &kp L  &ktodqo        &kkuco         &kp R         &kp F  &trans
+            &trans                    &kp A         &kp I    &kp N9       &ktedqc  &kp DOUBLE_QUOTES            &trans             &trans     &trans  &trans  &trans            &trans  &trans  &trans             &kp L  &ktodqo        &kkuco         &ksucc         &kp F  &trans
             &trans            &kp BACKSLASH  &kp NUMBER_1     &trans        &trans                               &trans  &macro_sticky_cmd  &kp EQUAL                  &kp LEFT_BRACKET  &trans  &trans                     &trans         &trans         &kp N     &kp SLASH  &trans
             >;
         };
