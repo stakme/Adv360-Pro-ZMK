@@ -115,7 +115,7 @@ wa_wo_swap,wwswap
         compatible = "zmk,behavior-mod-morph";
         label = "WA_WO_SWAP";
         #binding-cells = <0>;
-        bindings = <&kp LS(N0)>, <&kp N0>;
+        bindings = <&kp RS(N0)>, <&kp N0>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
