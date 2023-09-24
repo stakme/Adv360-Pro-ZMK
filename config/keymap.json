@@ -65,11 +65,11 @@
        "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",                               "&trans", "&trans",                                              "&kp RC(RG(RIGHT_SHIFT))",   "&kp RC(RIGHT_GUI)", "&kp RG(RIGHT_SHIFT)",   "&kp RIGHT_GUI", "&trans", "&trans",
        "&trans", "&trans", "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",                                                                 "&trans",              "&trans",          "&trans", "&trans", "&trans"
     ], [
-                     "&trans",               "&trasns", "&trans",         "&trans",             "&trans",             "&trans", "&trans",                                                             "&trans",    "&trans",      "&trans",       "&trans",        "&trans",    "&trans", "&trans",
+                     "&trans",                "&trans", "&trans",         "&trans",             "&trans",             "&trans", "&trans",                                                             "&trans",    "&trans",      "&trans",       "&trans",        "&trans",    "&trans", "&trans",
                      "&trans",  "&kp LC(LS(LEFT_ALT))", "&trans", "&kp LEFT_SHIFT",   "&kp LS(LEFT_ALT)", "&kp LC(LEFT_SHIFT)", "&trans",                                                             "&trans",    "&trans", "&kp PAGE_UP", "&kp UP_ARROW", "&kp PAGE_DOWN",    "&trans", "&trans",
            "&kp LEFT_CONTROL",  "&kp LC(LA(LEFT_GUI))", "&trans",   "&kp LEFT_ALT",   "&kp LA(LEFT_GUI)",   "&kp LC(LEFT_ALT)", "&trans",           "&trans", "&trans", "&trans", "&trans",           "&trans", "&kp RC(A)",    "&kp LEFT",     "&kp DOWN",     "&kp RIGHT", "&kp RC(E)", "&trans",
        "&kp LS(LA(LEFT_GUI))", "&kp LC(LG(LEFT_SHIFT)", "&trans",   "&kp LEFT_GUI", "&kp LG(LEFT_SHIFT)",   "&kp LC(LEFT_GUI)",                               "&trans", "&trans",                                  "&trans",      "&trans",       "&trans",        "&trans",    "&trans", "&trans",
-                     "&trans",               "&trasns", "&trans",         "&trans",             "&trans",                                  "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",                             "&trans",       "&trans",        "&trans",    "&trans", "&trans"
+                     "&trans",                "&trans", "&trans",         "&trans",             "&trans",                                  "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",                             "&trans",       "&trans",        "&trans",    "&trans", "&trans"
     ]
   ]
 }
