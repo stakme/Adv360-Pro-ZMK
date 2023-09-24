@@ -167,44 +167,73 @@ kana_ko_exclamation_mark,kkoem
         };
 
         layer_num {
+            /*
+
+       "&trans",    "&trans",   "&trans",    "&trans",   "&trans", "&trans", "&trans",                                                             "&trans",              "&trans",              "&trans",          "&trans", "&trans",                 "&trans",                "&trans",
+       "&trans", "&kp SLASH", "&kp STAR", "&kp MINUS", "&kp PLUS", "&trans", "&trans",                                                             "&trans", "&kp RC(RIGHT_SHIFT)",   "&kp RS(RIGHT_ALT)", "&kp RIGHT_SHIFT", "&trans",  "&kp RC(RS(RIGHT_ALT))",                "&trans",
+       "&trans",    "&kp N4",   "&kp N3",    "&kp N2",   "&kp N1", "&kp N0", "&trans",           "&trans", "&trans", "&trans", "&trans",           "&trans",   "&kp RC(RIGHT_ALT)",   "&kp RA(RIGHT_GUI)",   "&kp RIGHT_ALT", "&trans",  "&kp RC(RA(RIGHT_GUI))",     "&kp RIGHT_CONTROL",
+       "&trans",    "&kp N9",   "&kp N8",    "&kp N7",   "&kp N6", "&kp N5",                               "&trans", "&trans",                                 "&kp RC(RIGHT_GUI)", "&kp RG(RIGHT_SHIFT)",   "&kp RIGHT_GUI", "&trans", "&kp RC(RG(RIGHT_SHIFT)", "&kp RS(RA(RIGHT_GUI))",
+       "&trans",    "&trans",   "&trans",    "&trans",   "&trans",                     "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",                                               "&trans",          "&trans", "&trans",                 "&trans",                "&trans"*/
             bindings = <
- &trans     &trans    &trans     &trans    &trans  &trans            &trans                                                  &trans  &trans                 &trans           &trans  &trans                 &trans  &trans
- &trans  &kp SLASH  &kp STAR  &kp MINUS  &kp PLUS  &trans            &trans                                                  &trans  &trans      &kp RS(RIGHT_ALT)  &kp RIGHT_SHIFT  &trans                 &trans  &trans
- &trans     &kp N4    &kp N3     &kp N2    &kp N1  &kp N0            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &kp RA(RIGHT_COMMAND)    &kp RIGHT_ALT  &trans  &kp RS(RIGHT_COMMAND)  &trans
- &trans     &kp N9    &kp N8     &kp N7    &kp N6  &kp N5                            &trans                  &trans                  &trans                 &trans           &trans  &trans      &kp RIGHT_CONTROL  &trans
- &trans     &trans    &trans     &trans    &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                         &trans           &trans  &trans                 &trans  &trans
+            
+ &trans     &trans    &trans     &trans    &trans  &trans   &trans                                                  &trans  &trans                 &trans           &trans  &trans                 &trans  &trans
+ &trans  &kp SLASH  &kp STAR  &kp MINUS  &kp PLUS  &trans   &trans                                                  &trans  &trans      &kp RS(RIGHT_ALT)  &kp RIGHT_SHIFT  &trans                 &trans  &trans
+ &trans     &kp N4    &kp N3     &kp N2    &kp N1  &kp N0   &trans          &trans  &trans  &trans  &trans          &trans  &trans  &kp RA(RIGHT_COMMAND)    &kp RIGHT_ALT  &trans  &kp RS(RIGHT_COMMAND)  &trans
+ &trans     &kp N9    &kp N8     &kp N7    &kp N6  &kp N5                           &trans  &trans                          &trans                 &trans           &trans  &trans      &kp RIGHT_CONTROL  &trans
+ &trans     &trans    &trans     &trans    &trans                   &trans  &trans  &trans  &trans  &trans  &trans                                 &trans           &trans  &trans                 &trans  &trans
             >;
         };
 
         layer_mod_l {
             bindings = <
- &trans  &trans                &trans          &trans                &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans      &kp LEFT_CONTROL  &kp LEFT_SHIFT      &kp LS(LEFT_ALT)  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &kp LS(LEFT_COMMAND)    &kp LEFT_ALT  &kp LA(LEFT_COMMAND)  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans                &trans          &trans                &trans  &trans                            &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans                &trans          &trans                &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+ &trans  &trans                &trans          &trans                &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans      &kp LEFT_CONTROL  &kp LEFT_SHIFT      &kp LS(LEFT_ALT)  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &kp LS(LEFT_COMMAND)    &kp LEFT_ALT  &kp LA(LEFT_COMMAND)  &trans  &trans          &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans                &trans          &trans                &trans  &trans                          &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans                &trans          &trans                &trans                  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         layer_mod_r {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans                 &trans           &trans                 &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans      &kp RS(RIGHT_ALT)  &kp RIGHT_SHIFT      &kp RIGHT_CONTROL  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &kp RA(RIGHT_COMMAND)    &kp RIGHT_ALT  &kp RS(RIGHT_COMMAND)  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans                 &trans           &trans                 &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                         &trans           &trans                 &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans                 &trans           &trans                 &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans      &kp RS(RIGHT_ALT)  &kp RIGHT_SHIFT      &kp RIGHT_CONTROL  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans          &trans  &trans  &kp RA(RIGHT_COMMAND)    &kp RIGHT_ALT  &kp RS(RIGHT_COMMAND)  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                            &trans  &trans                          &trans                 &trans           &trans                 &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans                                 &trans           &trans                 &trans  &trans  &trans
             >;
         };
 
         layer_arrow {
             bindings = <
- &trans                &trans  &trans        &trans                &trans  &trans            &trans                                                  &trans     &trans       &trans        &trans         &trans     &trans  &trans
- &trans                &trans  &trans    &kp LSHIFT      &kp LS(LEFT_ALT)  &trans            &trans                                                  &trans     &trans  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN     &trans  &trans
- &trans  &kp LS(LEFT_COMMAND)  &trans  &kp LEFT_ALT  &kp LA(LEFT_COMMAND)  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &kp RC(A)     &kp LEFT      &kp DOWN      &kp RIGHT  &kp RC(E)  &trans
- &trans      &kp LEFT_CONTROL  &trans        &trans                &trans  &trans                            &trans                  &trans                     &trans       &trans        &trans         &trans     &trans  &trans
- &trans                &trans  &trans        &trans                &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                  &trans        &trans         &trans     &trans  &trans
+ &trans                &trans  &trans        &trans                &trans  &trans  &trans                                                       &trans     &trans       &trans        &trans         &trans     &trans  &trans
+ &trans                &trans  &trans    &kp LSHIFT      &kp LS(LEFT_ALT)  &trans  &trans                                                       &trans     &trans  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN     &trans  &trans
+ &trans  &kp LS(LEFT_COMMAND)  &trans  &kp LEFT_ALT  &kp LA(LEFT_COMMAND)  &trans  &trans            &trans  &trans  &trans  &trans             &trans  &kp RC(A)     &kp LEFT      &kp DOWN      &kp RIGHT  &kp RC(E)  &trans
+ &trans      &kp LEFT_CONTROL  &trans        &trans                &trans  &trans                            &trans  &trans                                &trans       &trans        &trans         &trans     &trans  &trans
+ &trans                &trans  &trans        &trans                &trans                    &trans  &trans  &trans  &trans  &trans  &trans                             &trans        &trans         &trans     &trans  &trans
             >;
         };
 
     };
 };
+/*
+    ], [
+       "&trans", "&trans",         "&trans",             "&trans",             "&trans",                "&trans",               "&trans",                                                             "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+       "&trans", "&trans", "&kp LEFT_SHIFT",   "&kp LS(LEFT_ALT)", "&kp LC(LEFT_SHIFT)",  "&kp LC(LS(LEFT_ALT))",     "&kp LEFT_CONTROL",                                                             "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+       "&trans", "&trans",   "&kp LEFT_ALT",   "&kp LA(LEFT_GUI)",   "&kp LC(LEFT_ALT)",  "&kp LC(LA(LEFT_GUI))", "&kp LS(LA(LEFT_GUI))",           "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+       "&trans", "&trans",   "&kp LEFT_GUI", "&kp LG(LEFT_SHIFT)",   "&kp LC(LEFT_GUI)", "&kp LC(LG(LEFT_SHIFT)",                                             "&trans", "&trans",                               "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+       "&trans", "&trans",         "&trans",             "&trans",             "&trans",                                                  "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans", "&trans", "&trans"
+
+
+       ], [
+       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",                                                                            "&trans",                 "&trans",              "&trans",              "&trans",          "&trans", "&trans", "&trans",
+       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",                                                                 "&kp RIGHT_CONTROL",  "&kp RC(RS(RIGHT_ALT))", "&kp RC(RIGHT_SHIFT)",   "&kp RS(RIGHT_ALT)", "&kp RIGHT_SHIFT", "&trans", "&trans",
+       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans",           "&kp RS(RA(RIGHT_GUI))",  "&kp RC(RA(RIGHT_GUI))",   "&kp RC(RIGHT_ALT)",   "&kp RA(RIGHT_GUI)",   "&kp RIGHT_ALT", "&trans", "&trans",  
+       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",                               "&trans", "&trans",                                              "&kp RC(RG(RIGHT_SHIFT)",   "&kp RC(RIGHT_GUI)", "&kp RG(RIGHT_SHIFT)",   "&kp RIGHT_GUI", "&trans", "&trans",
+       "&trans", "&trans", "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",                                                                 "&trans",              "&trans",          "&trans", "&trans", "&trans"
+    ], [
+                     "&trans",               "&trasns", "&trans",         "&trans",             "&trans",             "&trans", "&trans",                                                             "&trans",    "&trans",      "&trans",       "&trans",        "&trans",    "&trans", "&trans",
+                     "&trans",  "&kp LC(LS(LEFT_ALT))", "&trans", "&kp LEFT_SHIFT",   "&kp LS(LEFT_ALT)", "&kp LC(LEFT_SHIFT)", "&trans",                                                             "&trans",    "&trans", "&kp PAGE_UP", "&kp UP_ARROW", "&kp PAGE_DOWN",    "&trans", "&trans",
+           "&kp LEFT_CONTROL",  "&kp LC(LA(LEFT_GUI))", "&trans",   "&kp LEFT_ALT",   "&kp LA(LEFT_GUI)",   "&kp LC(LEFT_ALT)", "&trans",           "&trans", "&trans", "&trans", "&trans",           "&trans", "&kp RC(A)",    "&kp LEFT",     "&kp DOWN",     "&kp RIGHT", "&kp RC(E)", "&trans",
+       "&kp LS(LA(LEFT_GUI))", "&kp LC(LG(LEFT_SHIFT)", "&trans",   "&kp LEFT_GUI", "&kp LG(LEFT_SHIFT)",   "&kp LC(LEFT_GUI)",                               "&trans", "&trans",                                  "&trans",      "&trans",       "&trans",        "&trans",    "&trans", "&trans",
+                     "&trans",               "&trasns", "&trans",         "&trans",             "&trans",                                  "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",                             "&trans",       "&trans",        "&trans",    "&trans", "&trans"*/
