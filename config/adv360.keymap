@@ -211,7 +211,7 @@ kana_ko_exclamation_mark,kkoem
     &trans   &trans   &trans   &trans  &trans  &trans  &trans                                                                     &trans                   &trans               &trans               &trans           &trans  &trans  &trans
     &trans  &kp F12  &kp F11  &kp F10  &kp F9  &trans  &trans                                                          &kp RIGHT_CONTROL    &kp RC(RS(RIGHT_ALT))  &kp RC(RIGHT_SHIFT)    &kp RS(RIGHT_ALT)  &kp RIGHT_SHIFT  &trans  &trans
     &trans   &kp F4   &kp F3   &kp F2  &kp F1  &trans  &trans              &trans  &trans  &trans  &trans          &kp RS(RA(RIGHT_GUI))    &kp RC(RA(RIGHT_GUI))    &kp RC(RIGHT_ALT)    &kp RA(RIGHT_GUI)    &kp RIGHT_ALT  &trans  &trans  
-    &trans   &kp N8   &kp N7   &kp N6  &kp N5  &trans                              &trans  &trans                                         &kp RC(RG(RIGHT_SHIFT))    &kp RC(RIGHT_GUI)  &kp RG(RIGHT_SHIFT)    &kp RIGHT_GUI  &trans  &trans
+    &trans   &kp F8   &kp F7   &kp F6  &kp F5  &trans                              &trans  &trans                                         &kp RC(RG(RIGHT_SHIFT))    &kp RC(RIGHT_GUI)  &kp RG(RIGHT_SHIFT)    &kp RIGHT_GUI  &trans  &trans
     &trans   &trans   &trans   &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans                                                               &trans               &trans           &trans  &trans  &trans
             >;
         };
