@@ -15,101 +15,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-/*
-ル	、 
-kana_ru_comma,kruc
-
-ン	。
-kana_n_period,knp
-
-ク	（
-kana_ku_curl_open,kkuco
-
-ス	）
-kana_su_curl_close,ksucc
-
-ト	「
-kana_to_double_quote_open,ktodqo
-
-テ	」
-kana_te_double_quote_close,ktedqc
-
-ノ	・
-kana_no_middle_dot,knomd
-
-キ	？
-kana_ki_question_mark,kkiqm
-
-コ	！
-kana_ko_exclamation_mark,kkoem
-*/
 / {
   behaviors {
     #include "macros.dtsi"
-
-    kruc: kana_ru_comma {
-        compatible = "zmk,behavior-mod-morph";
-        label = "KANA_RU_COMMA";
-        #binding-cells = <0>;
-        bindings = <&kp DOT>, <&kp LS(COMMA)>;
-        mods = <(MOD_RSFT)>;
-    };
-    knp: kana_n_period {
-        compatible = "zmk,behavior-mod-morph";
-        label = "KANA_N_DOT";
-        #binding-cells = <0>;
-        bindings = <&kp Y>, <&kp LS(DOT)>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    kkuco: kana_ku_curl_open {
-        compatible = "zmk,behavior-mod-morph";
-        label = "KANA_KU_CURL_OPEN";
-        #binding-cells = <0>;
-        bindings = <&kp H>, <&kp LA(RS(N9))>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    ksucc: kana_su_curl_close {
-        compatible = "zmk,behavior-mod-morph";
-        label = "KANA_SU_CURL_CLOSE";
-        #binding-cells = <0>;
-        bindings = <&kp R>, <&kp LA(RS(N0))>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    ktodqo: kana_to_double_quote_open {
-        compatible = "zmk,behavior-mod-morph";
-        label = "KANA_TO_DOUBLE_QUOTE_OPEN";
-        #binding-cells = <0>;
-        bindings = <&kp S>, <&kp LS(EQUAL)>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    ktedqc: kana_te_double_quote_close {
-        compatible = "zmk,behavior-mod-morph";
-        label = "KANA_TE_DOUBLE_QUOTE_CLOSE";
-        #binding-cells = <0>;
-        bindings = <&kp W>, <&kp LS(LEFT_BRACKET)>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    knomd: kana_no_middle_dot {
-        compatible = "zmk,behavior-mod-morph";
-        label = "KANA_NO_MIDDLE_DOT";
-        #binding-cells = <0>;
-        bindings = <&kp K>, <&kp LS(SLASH)>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    kkiqm: kana_ki_question_mark {
-        compatible = "zmk,behavior-mod-morph";
-        label = "KANA_KI_QUESTION_MARK";
-        #binding-cells = <0>;
-        bindings = <&kp G>, <&kp LA(RS(SLASH))>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    kkoem: kana_ko_exclamation_mark {
-        compatible = "zmk,behavior-mod-morph";
-        label = "KANA_KO_EXCLAMATION_MARK";
-        #binding-cells = <0>;
-        bindings = <&kp B>, <&kp LA(RS(N1))>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
   };
 
     keymap {
@@ -121,7 +29,7 @@ kana_ko_exclamation_mark,kkoem
             &kp ESC             &kp PLUS    &kp QUESTION    &kp ASTERISK    &kp AMPERSAND   &kp PERCENT &kp C_PP                                                                                                                &kp CAPS        &kp DOLLAR  &kp COLON   &kp EQUAL       &kp EXCLAMATION &kp MINUS           &kp DEL
             &kp RIGHT_BRACKET   &kp Q       &kp W           &kp E           &kp R           &kp T       &kp RIGHT_PARENTHESIS                                                                                                   &kp RIGHT_BRACE &kp Y       &kp U       &kp I           &kp O           &kp P               &kp GREATER_THAN
             &kp LEFT_BRACKET    &lt 6 A     &lt 8 S         &kp D           &kp F           &kp G       &kp LEFT_PARENTHESIS                &sk LEFT_GUI        &to 0               &to 1           &sk RIGHT_ALT               &kp LEFT_BRACE  &kp H       &kp J       &kp K           &lt 5 L         &lt 7 DOUBLE_QUOTES &kp LESS_THAN
-            &kp PIPE            &kp Z       &lt 4 X         &kp C           &kp V           &kp B                                                               &kp LG(SPACE)       &kp RA(GRAVE)                                              &kp N       &kp M       &kp COMMA       &lt 4 DOT       &lt 9 SLASH         &kp CARET
+            &kp PIPE            &kp Z       &lt 4 X         &kp C           &kp V           &kp B                                                               &kp LG(SPACE)       &kp RA(GRAVE)                                               &kp N       &kp M       &kp COMMA       &lt 4 DOT       &lt 9 SLASH         &kp CARET
             &kp LC(SPACE)       &kp AT_SIGN &kp HASH        &caps_word      &kp BSPC                                            &kp SPACE   &sk LEFT_CONTROL    &kp SEMI            &kp UNDERSCORE  &sk RIGHT_SHIFT &kp ENTER                               &kp TAB     &kp BACKSLASH   &kp APOSTROPHE  &kp GRAVE           &kp TILDE
             >;
         };
@@ -129,10 +37,10 @@ kana_ko_exclamation_mark,kkoem
         layer_ja1 {
             bindings = <
             &trans           &kp M              &kp J     &kp COMMA      &kp N6     &trans      &trans                                                                                                                &trans             &trans              &kp O      &kp SEMICOLON    &kp N7     &kp MINUS    &trans
-            &kp BACKSLASH    &kp P              &kp N5    &kkoem         &kkiqm     &kp V       &trans                                                                                                                &trans             &kp SINGLE_QUOTE    &knomd     &kp Z            &kp N8     &kp N2       &kp C
-            &kp LS(N0)       &lt 6 UNDERSCORE   &lt 8 T   &kruc          &knp       &kp U       &kp RIGHT_BRACE            &trans               &trans               &trans               &trans                      &kp RS(BACKSLASH)  &kp N3              &kp E      &kp N4           &lt 5 D    &lt 7 Q      &kp X
-            &kp N0           &kp A              &kp I     &kp N9         &ktedqc    &kp TILDE                                                   &trans               &trans                                                              &kp L               &ktodqo    &kkuco           &ksucc     &kp F        &trans
-            &trans           &kp PLUS           &kp N1    &kp LESS_THAN  &trans                                  &trans    &macro_sticky_cmd    &kp RIGHT_BRACKET    &kp LEFT_BRACKET    &kp RIGHT_SHIFT    &trans                                           &trans     &kp GREATER_THAN &kp N      &kp SLASH    &trans
+            &kp BACKSLASH    &kp P              &kp N5    &kp B          &kp G      &kp V       &ja_exm                                                                                                               &kp RIGHT_BRACE    &kp SINGLE_QUOTE    &kp K      &kp Z            &kp N8     &kp N2       &kp C
+            &kp LS(N0)       &lt 6 UNDERSCORE   &lt 8 T   &kp DOT        &kp Y      &kp U       &ja_qum                    &trans               &trans               &trans               &trans                      &kp LEFT_BRACE     &kp N3              &kp E      &kp N4           &lt 5 D    &lt 7 Q      &kp X
+            &kp N0           &kp A              &lt 4 I   &kp N9         &kp W      &kp TILDE                                                   &trans               &trans                                                              &kp L               &kp S      &kp H            &lt 4 R    &lt 9  F     &trans
+            &trans           &kp PLUS           &kp N1    &kp LESS_THAN  &trans                                  &trans    &lm 0 LEFT_CONTROL   &kp RIGHT_BRACKET    &kp LEFT_BRACKET    &kp RIGHT_SHIFT    &trans                                           &trans     &kp GREATER_THAN &kp N      &kp SLASH    &trans
             >;
         };
 
