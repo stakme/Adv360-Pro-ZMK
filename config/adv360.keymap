@@ -40,7 +40,7 @@
             &kp BACKSLASH    &kp P              &kp N5    &kp B          &kp G      &kp V       &ja_exm                                                                                                               &kp RIGHT_BRACE    &kp SINGLE_QUOTE    &kp K      &kp Z            &kp N8     &kp N2       &kp C
             &kp LS(N0)       &lt 6 UNDERSCORE   &lt 8 T   &kp DOT        &kp Y      &kp U       &ja_qum                    &trans               &trans               &trans               &trans                      &kp LEFT_BRACE     &kp N3              &kp E      &kp N4           &lt 5 D    &lt 7 Q      &kp X
             &kp N0           &kp A              &lt 4 I   &kp N9         &kp W      &kp TILDE                                                   &trans               &trans                                                              &kp L               &kp S      &kp H            &lt 4 R    &lt 9  F     &trans
-            &trans           &kp PLUS           &kp N1    &kp LESS_THAN  &trans                                  &trans    &lm 0 LEFT_CONTROL   &kp RIGHT_BRACKET    &kp LEFT_BRACKET    &kp RIGHT_SHIFT    &trans                                           &trans     &kp GREATER_THAN &kp N      &kp SLASH    &trans
+            &trans           &kp PLUS           &kp N1    &kp LESS_THAN  &trans                                  &trans    &lm_ctrl             &kp RIGHT_BRACKET    &kp LEFT_BRACKET    &kp RIGHT_SHIFT    &trans                                           &trans     &kp GREATER_THAN &kp N      &kp SLASH    &trans
             >;
         };
 
